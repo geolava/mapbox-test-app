@@ -19,6 +19,36 @@ curl --location 'https://geo-stage-001.geolava.com/features/parking' \
 }'
 ```
 
+Response from the API:
+
+```bash
+{
+    "features": [
+        {
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -122.434252,
+                        37.804868
+                    ],
+                    [
+                        -122.434286,
+                        37.804864
+                    ]
+                ]
+            },
+            "properties": {
+                "id": "63bccef66ecd560a28cbbc08"
+            },
+            "type": "Feature"
+        },
+        ...
+    ]
+    "type": "FeatureCollection"
+}
+```
+
 ✅ Requirements
 1. Render each parking lines as a polygon on the Mapbox map.
 2. Draw parking lines based on the data:
