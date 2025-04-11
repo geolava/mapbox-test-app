@@ -51,7 +51,7 @@ Response from the API:
 
 ✅ Requirements
 1. Render each parking lines as a polygon on the Mapbox map.
-2. Draw parking lines based on the data:
+2. Draw **blue** parking lines based on the data:
     - Lines should be properly on the side of the road
     - Handle rotated or non-axis-aligned bounding boxes.
 3. Lines should remain aligned and visible while zooming or panning the map.
