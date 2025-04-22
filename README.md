@@ -75,5 +75,5 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. More points for code being modular and resusable.
-The page auto-updates as you edit the file.
 
+Also, ask interviewer if you need anything to run the code.

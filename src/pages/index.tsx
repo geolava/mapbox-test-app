@@ -1,24 +1,16 @@
 
-import { Geist, Geist_Mono } from "next/font/google";
-import Map from "react-map-gl";
+import Map, { MapRef } from "react-map-gl";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { AppConfig } from "../../AppConfig";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { useState } from "react";
 
 export default function Home() {
+  const [map, setMap] = useState<MapRef | undefined>(undefined);
+
+  // Complete the parking line component here
 
   return (
       <div className="w-full h-full absolute">
-        
         <Map
             mapboxAccessToken={AppConfig.map.tileKey}
             initialViewState={{
@@ -27,6 +19,7 @@ export default function Home() {
               zoom: AppConfig.map.defaultZoom,
               pitch: 0,
             }}
+            ref={e => setMap && setMap(e || undefined)}
             
             mapStyle={AppConfig.map.lightMapStyle}
           >
