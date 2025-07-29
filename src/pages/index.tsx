@@ -8,6 +8,9 @@ export default function Home() {
   const [map, setMap] = useState<MapRef | undefined>(undefined);
 
   // Complete the parking line component here
+  // Here is the documentation for the Layer component: https://visgl.github.io/react-map-gl/docs/api-reference/mapbox/layer
+  // For Source component: https://visgl.github.io/react-map-gl/docs/api-reference/mapbox/source
+  // 
 
   return (
       <div className="w-full h-full absolute">
